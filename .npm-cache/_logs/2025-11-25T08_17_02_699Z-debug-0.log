@@ -1,0 +1,22 @@
+0 verbose cli /usr/local/bin/node /usr/local/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.6.3
+2 info using node@v22.16.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/karstenmonteiro/Dev/mountmix/mm-gemini/.npmrc
+5 silly config load:file:/Users/karstenmonteiro/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm exec create-next-app@latest temp_app --typescript --tailwind --eslint --app --no-src-dir --import-alias @/*
+8 verbose argv "exec" "--yes" "--" "create-next-app@latest" "temp_app" "--typescript" "--tailwind" "--eslint" "--app" "--no-src-dir" "--import-alias" "@/*"
+9 verbose logfile logs-max:10 dir:/Users/karstenmonteiro/Dev/mountmix/mm-gemini/.npm-cache/_logs/2025-11-25T08_17_02_699Z-
+10 verbose logfile /Users/karstenmonteiro/Dev/mountmix/mm-gemini/.npm-cache/_logs/2025-11-25T08_17_02_699Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmjs.org/create-next-app 204ms (cache revalidated)
+14 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 verbose cwd /Users/karstenmonteiro/Dev/mountmix/mm-gemini
+17 verbose os Darwin 25.2.0
+18 verbose node v22.16.0
+19 verbose npm  v11.6.3
+20 verbose exit 0
+21 info ok
