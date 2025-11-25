@@ -36,7 +36,7 @@ const cocktails = [
 
 export default function Cocktails() {
   return (
-    <section id="cocktails" className="py-24 px-6 relative bg-black/20">
+    <section id="cocktails" className="py-24 px-6 relative theme-navy">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,8 +59,8 @@ export default function Cocktails() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-lg"
+              transition={{ delay: 0.2 + index * 0.1, duration: 0.5 }}
+              className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-lg border border-white/5"
             >
               <Image
                 src={cocktail.image}

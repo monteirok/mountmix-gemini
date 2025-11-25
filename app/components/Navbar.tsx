@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/app/utils/cn";
 
 const navLinks = [
-  { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Cocktails", href: "#cocktails" },
@@ -58,7 +57,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-white/80 hover:text-white transition-colors relative group"
+                className="text-lg font-medium text-white/80 hover:text-white transition-colors relative group"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-1/2 w-0 h-[1px] bg-white/50 -translate-x-1/2 transition-all duration-300 group-hover:w-full" />
@@ -66,7 +65,7 @@ export default function Navbar() {
             ))}
             <Link
               href="#book"
-              className="px-6 py-2.5 rounded-full bg-[var(--accent-gold)] text-black font-semibold text-sm hover:bg-[#E5C158] transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:scale-105 active:scale-95"
+              className="px-6 py-2.5 rounded-full bg-[var(--accent-gold)] text-black font-semibold text-base hover:bg-[#E5C158] transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:scale-105 active:scale-95"
             >
               Book Now
             </Link>

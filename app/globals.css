@@ -1,22 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050A14; /* Deep Navy/Black */
-  --foreground: #F0F4F8; /* Ice White */
+  --background: #050A14;
+  --foreground: #F0F4F8;
   --accent-gold: #D4AF37;
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-bg: rgba(255, 255, 255, 0.05);
+  --accent-ice: #A5F3FC;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-gold: var(--accent-gold);
-  --color-glass-border: var(--glass-border);
-  --color-glass-bg: var(--glass-bg);
+  --color-ice: var(--accent-ice);
   
   --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-geist-mono); /* Placeholder, will update in layout */
+  --font-serif: var(--font-geist-mono);
 }
 
 body {
@@ -46,9 +44,13 @@ body {
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 }
 
-.text-gradient-gold {
-  background: linear-gradient(to right, #F3E5AB, #D4AF37, #C5A059);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+/* Theme Utilities */
+.theme-navy {
+  background-color: #050A14; /* Deep Navy */
+  color: #F0F4F8;
+}
+
+.theme-slate {
+  background-color: #0F172A; /* Deep Slate */
+  color: #F8FAFC;
 }
