@@ -36,15 +36,33 @@ export default function BookEventModal({ isOpen, onClose }: BookEventModalProps)
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      onClose();
-      setFormData({ name: "", email: "", eventType: "wedding", date: "", message: "" });
-    }, 2000);
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      setIsSubmitting(false);
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        onClose();
+        setFormData({ name: "", email: "", eventType: "wedding", date: "", message: "" });
+      }, 3000);
+    } catch (error) {
+      console.error('Submission error:', error);
+      setIsSubmitting(false);
+      // Ideally show an error message to the user here, but for now we'll just log it
+      alert("Sorry, there was an issue sending your message. Please try again or contact us directly.");
+    }
   };
 
   return (
